@@ -12,12 +12,19 @@ namespace ServiceExample
         {
             if (!context.Files.Any())
             {
-                context.Files.Add(
+                context.Files.AddRange(
                     new File
                     {
                         Name = "text.txt",
                         MineType = "txt",
-                        Size = "13 byte",
+                        Size = "13",
+                        DateAdd = DateTime.Now
+                    },
+                    new File
+                    {
+                        Name = "Animal_sean_crane_61.jpg",
+                        MineType = "jpg",
+                        Size = "101",
                         DateAdd = DateTime.Now
                     }
                 );

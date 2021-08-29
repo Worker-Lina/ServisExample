@@ -23,7 +23,7 @@ namespace ServiceExample
                 try
                 {
                     var context = services.GetRequiredService<FileContext>();
-                    //ContentDb.Initialize(context);
+                    ContentDb.Initialize(context);
                 }
                 catch (Exception ex)
                 {
